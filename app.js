@@ -42,6 +42,8 @@ function PageTransitions() {
   const themeBtn = document.querySelector('.theme-btn');
   themeBtn.addEventListener('click', () => {
     let element = document.body;
+    let toggleBtn = document.getElementById('toggleBtn');
+    toggleBtn.classList.toggle('toggle-btn')
     element.classList.toggle('light-mode')
   })
 }
